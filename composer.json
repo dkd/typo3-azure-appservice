@@ -1,0 +1,92 @@
+{
+  "name": "ksjogo/typo3-azure",
+  "license": "MIT",
+  "type": "project",
+  "description": "TYPO3 CMS on Azure",
+  "authors": [
+    {
+      "name": "Johannes Goslar",
+      "email": "johannes.goslar@kronberger-spiele.de"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.typo3.org/",
+      "options": {
+      }
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/ksjogo/bootstrap_package.git",
+      "options": {
+      }
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/ksjogo/TYPO3.CMS.git",
+      "options": {
+      }
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/ksjogo/typo3_console.git",
+      "options": {
+      }
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/ksjogo/CmsComposerInstallers.git",
+      "options": {
+      }
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/ksjogo/dbal.git",
+      "options": {
+      }
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+
+    "typo3/cms": "dev-master as 8.6",
+    "typo3-ter/introduction": "^2.3",
+    "helhum/typo3-console": "dev-master as 4.2.0",
+
+    "bk2k/bootstrap-package": "dev-platform as 7.0",
+
+    "typo3/cms-composer-installers": "dev-master as 1.4",
+
+    "doctrine/dbal": "dev-master as 2.5.4"
+  },
+  "autoload": {
+    "psr-4": {
+    }
+  },
+  "autoload-dev": {
+  },
+  "require-dev": {
+  },
+  "scripts": {
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": "web",
+      "copy-on-symlink-failure": true
+    },
+    "helhum/typo3-console": {
+      "install-binary": true,
+      "install-extension-dummy": false,
+      "active-packages": [
+      ]
+    }
+  },
+  "config":{
+    "discard-changes": true,
+    "github-oauth": {
+      "github.com": "9e421cdc6052091ad874b28f362fe478c55f3ec3"
+    }
+  }
+}

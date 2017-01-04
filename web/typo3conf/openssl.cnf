@@ -1,0 +1,9 @@
+# this is an fuzzyily constructed minimal openssl config file
+# to allow the use of the openssl_pkey_new and openssl_csr_new
+# and openssl_csr_export functions in php
+[ req ]
+default_bits = 2048
+distinguished_name = req_distinguished_name
+[ req_distinguished_name ]
+[ v3_req ]
+[ v3_ca ]
