@@ -3,7 +3,7 @@
 Maintained by the TYPO3 Community Interest Group (CIG) Azure Cloud.
 
 # Installation
-0. `git clone https://github.com/ksjogo/azure-typo3-template.git`
+0. `git clone https://github.com/dkd/typo3-azure-appservice.git`
 1. Use our resouce template TYPO3.json to create the required resource inside your [portal](https://portal.azure.com).
 2. Setup your deployment credentials inside the portal.
 3.  `git remote add origin URL`
